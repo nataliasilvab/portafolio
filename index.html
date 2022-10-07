@@ -192,16 +192,37 @@
             <hr class="opacity-100 mx-auto w-25">
         </div>
 
-        <div>
-            <p>¿Quieres conocer más de mi?</p>
-            <a target="_blank" href="https://55v4ozbv0y4.typeform.com/to/vvVptYkz">
-                <button class="btn bg-secondary text-white">Comenzar</button>
 
-            </a>
 
-        </div>
+        <form action="enviar.php" method="post">
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="name" class="form-control" />
+                <label class="form-label" for="form4Example1">Nombre</label>
+            </div>
+        
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="mail" class="form-control" />
+                <label class="form-label" for="form4Example2">Email</label>
+            </div>
+        
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="message" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Mensaje</label>
+            </div>
+        
+           
+        
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+        </form>
+
 
     </section>
+
+
 
     <footer id="Footer" class="text-center text-white py-5">
         <div class="container">
