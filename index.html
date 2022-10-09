@@ -17,6 +17,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Mi Portafolio</title>
 </head>
 
@@ -60,7 +61,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Fullstack Developer Junior - Informatic Support</p>
+            <p class="pe masthead-subheading font-weight-light mb-0">Fullstack Developer Junior - Informatic Support</p>
         </div>
     </header>
 
@@ -87,7 +88,7 @@
 
     <section id="Experiencia" class="py-5 container text-center">
         <div>
-            <h1 class="fw-bold text-uppercase">MI ExperIencia</h1>
+            <h1 class="titulo2 fw-bold text-uppercase">MI ExperIencia</h1>
             <hr class="opacity-100 mx-auto w-25">
         </div>
         <div class="row pt-3">
@@ -188,47 +189,108 @@
 
     <section id="Contacto" class="container text-center py-5">
         <div class="mb-5">
-            <h1 class="fw-bold text-uppercase">Contacto</h1>
+            <h1 class="titulo2 fw-bold text-uppercase">Contacto</h1>
             <hr class="opacity-100 mx-auto w-25">
+        </div>
+
+        <div class="col-6 col-md-4 container contact_form">
+
+            <div class="formulario">
+                <h2>Formulario de contacto</h2>
+                <h3>Escríbeme y en breve me pondré en contacto contigo</h3>
+
+
+                <form action="https://formspree.io/f/mrgdlgey" method="POST">
+
+
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                            placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Escribe tu Email">
+                    </p>
+
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
+
+
+
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                            placeholder="Escribe un asunto">
+                    </p>
+
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                            placeholder="Deja aquí tu comentario..."></textarea>
+                    </p>
+
+                    <button class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
+            </div>
         </div>
 
 
 
-        <form action="enviar.php" method="post">
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-                <input type="text" id="name" class="form-control" />
-                <label class="form-label" for="form4Example1">Nombre</label>
-            </div>
-
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-                <input type="email" id="mail" class="form-control" />
-                <label class="form-label" for="form4Example2">Email</label>
-            </div>
-
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-                <textarea class="form-control" id="message" rows="4"></textarea>
-                <label class="form-label" for="form4Example3">Mensaje</label>
-            </div>
 
 
-
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
-        </form>
 
 
     </section>
 
+    <div class="container text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div>
+            <div class="col-6 col-md-4">.1</div>
+            <div class="col-6 col-md-4">.2</div>
+            <div class="col-6 col-md-4">.3</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
 
 
-    <footer id="Footer" class="text-center text-white py-5">
-        <div class="container">
+
+    <footer id="Footer" class="text-center text-white py-5 col-lg-12 col-md-12">
+        <div>
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <h1 class="fw-bold text-uppercase">NATALIA</h1>
+                    <h1 class="fw-bold text-uppercase">NATALIA SILVA</h1>
                 </div>
                 <div class="col-12 col-sm-6">
                     <a href="https://github.com/nataliasilvab"><i class="fab fa-github-square fa-3x mx-2"></i></a>

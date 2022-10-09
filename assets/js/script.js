@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $("a").click(function () {
         var gato = this.hash
@@ -9,3 +11,11 @@ $(document).ready(function () {
         )
     })
 })
+
+function btnClick() {
+    Swal.fire(
+        'Mensaje enviado correctamente',
+        '!Me contactaré contigo pronto!',
+        'success'
+    )
+}
